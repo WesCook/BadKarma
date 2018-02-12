@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        BadKarma
 @namespace   github.com/WesCook/BadKarma
-@version     1.0.0
+@version     1.0.1
 @description A userstyle to hide all karma on reddit.com
 @author      Wes Cook (http://wescook.ca)
 @homepageURL https://github.com/WesCook/BadKarma
@@ -10,7 +10,7 @@
 
 @-moz-document domain("reddit.com") {
 	/* Link and comment scores, top-right "upvoted" percentage */
-	body:not(.moderator) .score {display: none;}
+	body:not(.moderator) .score {display: none !important;}
 
 	/* Search page */
 	body:not(.moderator) .search-score {display: none;}

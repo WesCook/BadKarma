@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        BadKarma
 @namespace   github.com/WesCook/BadKarma
-@version     0.1.1
+@version     0.2.0
 @description A userstyle to hide all karma on reddit.com
 @author      Wes Cook (http://wescook.ca)
 @homepageURL https://github.com/WesCook/BadKarma
@@ -9,12 +9,21 @@
 ==/UserStyle== */
 
 @-moz-document domain("reddit.com") {
-    body:not(.moderator) .thing .score {display: none !important;} /* Posts/threads */
-    body:not(.moderator) .score .number, .score .word {display: none;} /* Top right thread score */
-    body:not(.moderator) .search-score {display: none;} /* Search page */
-    .user, .user span {font-size: 0 !important;} /* Hide top right user karma */
-    .user a {font-size: x-small;} /* However still show user link */
-    .Post__scoreWrap {display: none;} /* New profile, submissions */
-    .Post__commentContainer > div > div > div:first-child, .Post__childComment {font-size: 0;} /* New profile, comment - remove whole line */
-    .Post__username, .Post__time {font-size: 11px; margin: 0 3px;} /* New profile, comment - reset size for non-score elements */
+	/* Link and comment scores, top-right "upvoted" percentage */
+	body:not(.moderator) .score {display: none;}
+
+	/* Search page */
+	body:not(.moderator) .search-score {display: none;}
+
+	/* Hide top-right user karma */
+	.userkarma {display: none;}
+	.user, .user span {font-size: 0 !important;} /* Hide parenthesis around score (no element) */
+	.user a {font-size: x-small;} /* Restore username to original size */
+
+	/* New user profile */
+	.Post__score {display: none;} /* Top-level submissions */
+	.Post__commentContainer > div > div > div:first-child, .Post__childComment {font-size: 0; line-height: 1;} /* Hide score (no element) */
+	.Post__commentContainer > div > div > div:first-child .Post__username, .Post__childComment .Post__username {font-size: 11px;} /* Restore username */
+	.Post__commentContainer > div > div > div:first-child time, .Post__childComment time {font-size: 11px; margin-left: 4px;} /* Restore time */
+	.Post__commentContainer > div > div > div:first-child span, .Post__childComment span {font-size: 11px; margin-left: 3px;} /* Restore mod/admin/submitter badges */
 }

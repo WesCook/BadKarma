@@ -8,11 +8,11 @@ Hiding karma removes the gamification from Reddit.  It allows you to post withou
 
 ## Compatibility
 
-|                                            | Chrome              | Firefox                 | Opera                   | Safari               |
-|--------------------------------------------|---------------------|-------------------------|-------------------------|----------------------|
-| [Stylus][stylus-home]<sup>1</sup>         | [Yes][stylus-ch]     | [Yes][stylus-fx]        | [Yes][stylus-op]        | No                   |
-| [Stylish][stylish-home]                   | No<sup>2</sup>       | [Yes][stylish-fx]       | No                      | No                   |
-| [FreeStyler][freestyler-home]<sup>1</sup> | [Yes][freestyler-ch] | [Yes][freestyler-multi] | [Yes][freestyler-multi] | [Yes][freestyler-op] |
+|                                   | Chrome             | Firefox               | Opera                  | Safari             |
+|-----------------------------------|--------------------|-----------------------|------------------------|--------------------|
+| [Stylus][stylus-home]<sup>1</sup> | [✔][stylus-ch]     | [✔][stylus-fx]        | [✔][stylus-op]        | ✗                  |
+| [Stylish][stylish-home]           | ✗<sup>2</sup>      | [✔][stylish-fx]       | ✗                     | ✗                  |
+| [FreeStyler][freestyler-home]     | [✔][freestyler-ch] | [✔][freestyler-multi] | [✔][freestyler-multi] | [✔][freestyler-op] |
 
 [stylus-home]: https://add0n.com/stylus.html
 [stylus-ch]: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en
@@ -27,7 +27,7 @@ Hiding karma removes the gamification from Reddit.  It allows you to post withou
 [freestyler-op]: https://addons.opera.com/en/extensions/details/freestyler/?display=en
 [freestyler-multi]: https://freestyler.ws/plugin-page
 
-<sup>1. Stylus and FreeStyler can auto-install the userstyle by viewing the [raw file](https://raw.githubusercontent.com/WesCook/BadKarma/master/badkarma.user.css) and installing at the prompt.</sup>  
+<sup>1. Stylus can auto-install the userstyle by viewing the [raw file](https://raw.githubusercontent.com/WesCook/BadKarma/master/badkarma.user.css) and installing at the prompt.</sup>  
 <sup>2. Currently this script does not work with Stylish on Chrome without removing the `@-moz-document` rule.</sup>
 
 ## Notes

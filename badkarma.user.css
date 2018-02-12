@@ -1,9 +1,20 @@
-/* Hide karma */
-body:not(.moderator) .thing .score {display: none !important;} /* Posts/threads */
-body:not(.moderator) .score .number, .score .word {display: none;} /* Top right thread score */
-body:not(.moderator) .search-score {display: none;} /* Search page */
-.user, .user span {font-size: 0 !important;} /* Hide top right user karma */
-.user a {font-size: x-small;} /* However still show user link */
-.Post__scoreWrap {display: none;} /* New profile, submissions */
-.Post__commentContainer > div > div > div:first-child, .Post__childComment {font-size: 0;} /* New profile, comment - remove whole line */
-.Post__username, .Post__time {font-size: 11px; margin: 0 3px;} /* New profile, comment - reset size for non-score elements */
+/* ==UserStyle==
+@name        BadKarma (https://github.com/WesCook/BadKarma)
+@namespace   github.com/WesCook/BadKarma
+@version     0.1.0
+@description A userstyle to hide all karma on reddit.com
+@author      Wes Cook
+@homepageURL http://wescook.ca
+@license MIT
+==/UserStyle== */
+
+@-moz-document domain("reddit.com") {
+    body:not(.moderator) .thing .score {display: none !important;} /* Posts/threads */
+    body:not(.moderator) .score .number, .score .word {display: none;} /* Top right thread score */
+    body:not(.moderator) .search-score {display: none;} /* Search page */
+    .user, .user span {font-size: 0 !important;} /* Hide top right user karma */
+    .user a {font-size: x-small;} /* However still show user link */
+    .Post__scoreWrap {display: none;} /* New profile, submissions */
+    .Post__commentContainer > div > div > div:first-child, .Post__childComment {font-size: 0;} /* New profile, comment - remove whole line */
+    .Post__username, .Post__time {font-size: 11px; margin: 0 3px;} /* New profile, comment - reset size for non-score elements */
+}

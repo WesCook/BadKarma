@@ -10,9 +10,9 @@ Hiding karma removes the gamification from Reddit.  It allows you to post withou
 
 |                                           | Chrome             | Firefox               | Opera               | Safari                |
 |-------------------------------------------|--------------------|-----------------------|---------------------|-----------------------|
-| [Stylus][stylus-home]<sup>1</sup>         | [✔][stylus-ch]     | [✔][stylus-fx]        | [✔][stylus-op]     | ✗                     |
-| [Stylish][stylish-home]<sup>2</sup>       | [✔][stylish-ch]    | [✔][stylish-fx]       | [✔][stylish-op]    | ✗                     |
-| [FreeStyler][freestyler-home]<sup>3</sup> | [✔][freestyler-ch] | ✗                     | [✔][freestyler-op] | [✔][freestyler-multi] |
+| [Stylus][stylus-home]<sup>1</sup>         | [✔][stylus-ch]     | [✔][stylus-fx]        | [✔][stylus-op]     |                       |
+| [Stylish][stylish-home]<sup>2</sup>       | [✔][stylish-ch]    | [✔][stylish-fx]       | [✔][stylish-op]    |                       |
+| [FreeStyler][freestyler-home]<sup>3</sup> | [✔][freestyler-ch] |                       | [✔][freestyler-op] | [✔][freestyler-multi] |
 
 <sup>1. Stylus can auto-install the userstyle by viewing the [raw file](https://raw.githubusercontent.com/WesCook/BadKarma/master/badkarma.user.css) and installing at the prompt.</sup>  
 <sup>2. Stylish won't import the userstyle directly, but can be imported into a new style using the "Mozilla Format Import" feature.</sup>  

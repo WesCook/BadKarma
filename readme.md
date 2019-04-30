@@ -4,7 +4,9 @@ A userstyle to hide all karma on reddit.com.  Designed for use with [Stylus][sty
 
 ## Why hide karma?
 
-Hiding karma removes the gamification from Reddit.  It allows you to post without worrying quite so much about sharing the "wrong opinion", or being influenced in your own voting.
+Hiding karma removes the gamification from Reddit.  It allows you to post without worrying quite so much about groupthink, or being influenced in your own voting.  The focus returns to the content, not the points.
+
+Subreddits that you moderate will be exempt from hiding karma so you can still evaluate community sentiment.
 
 ## Compatibility
 
@@ -18,9 +20,6 @@ Hiding karma removes the gamification from Reddit.  It allows you to post withou
 <sup>2. Stylish won't import the userstyle directly, but can be imported into a new style using the "Mozilla Format Import" feature.</sup>  
 <sup>3. FreeStyler requires the `@-moz-document` rule be removed.</sup>
 
-## Notes
-
-* Subreddits that you moderate will be exempt from hiding karma, so you can still evaluate community sentiment.
 
 [stylus-home]: https://add0n.com/stylus.html
 [stylus-ch]: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en

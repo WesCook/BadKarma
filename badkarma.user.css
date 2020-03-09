@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        BadKarma
 @namespace   github.com/WesCook/BadKarma
-@version     1.1.2
+@version     1.2.0
 @description A userstyle to hide all karma on reddit.com
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/BadKarma
@@ -29,13 +29,9 @@
 	.author-tooltip__credentials-list > .author-tooltip__credential:first-child {display: none;}
 	.author-tooltip {width: 345px;} /* Reduce card width to better fit contents */
 
-	/* New profile page */
-	.Post__score {display: none;} /* Top-level submissions */
-	.Post__commentContainer > div > div > div:first-child, .Post__childComment {font-size: 0; line-height: 1;} /* Hide score (no element) */
-	.Post__commentContainer > div > div > div:first-child .Post__username, .Post__childComment .Post__username {font-size: 11px;} /* Restore username */
-	.Post__commentContainer > div > div > div:first-child time, .Post__childComment time {font-size: 11px; margin-left: 4px;} /* Restore time */
-	.Post__commentContainer > div > div > div:first-child span, .Post__childComment span {font-size: 11px; margin-left: 3px;} /* Restore mod/admin/submitter badges */
-	
+	/* Profile Page */
+	.profile-page .score.likes {display: none !important;}
+
 	/************/
 	/* Redesign */
 	/************/

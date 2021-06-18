@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        BadKarma
 @namespace   github.com/WesCook/BadKarma
-@version     1.2.0
+@version     1.3.0
 @description A userstyle to hide all karma on reddit.com
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/BadKarma
@@ -22,8 +22,8 @@
 
 	/* Top-right user karma */
 	.userkarma {display: none;}
-	.user, .user span {font-size: 0 !important;} /* Hide parenthesis around score (no element) */
-	.user a {font-size: x-small;} /* Restore username to original size */
+	.user, .user span {font-size: 0;} /* Hide parenthesis around score (no element) */
+	.user a {font-size: x-small !important;} /* Restore username to original size */
 
 	/* User hover cards */
 	.author-tooltip__credentials-list > .author-tooltip__credential:first-child {display: none;}
